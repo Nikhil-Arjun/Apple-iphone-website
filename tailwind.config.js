@@ -14,6 +14,16 @@ export default {
         zinc: "#101010",
       },
     },
+    fontFamily: {
+      sans: [
+        "SF Pro Display",
+        "SF Pro Icons",
+        "Helvetica Neue",
+        "Helvetica",
+        "Arial",
+        "sans-serif",
+      ],
+    },
   },
   plugins: [],
 };
