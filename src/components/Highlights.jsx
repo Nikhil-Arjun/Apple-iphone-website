@@ -1,11 +1,12 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { rightImg, watchImg } from "../utils";
+import VideoCarousel from "./VideoCarousel";
 
 const Highlights = () => {
   useGSAP(() => {
-    gsap.to("#title", { opacity: 1, y: 0 });
-    gsap.to(".link", { opacity: 1, y: 0 });
+    gsap.to("#title", { opacity: 1, y: 0, delay: 1.5 });
+    gsap.to(".link", { opacity: 1, y: 0, delay: 1.5 });
   }, []);
 
   return (
@@ -17,7 +18,7 @@ const Highlights = () => {
           <h1 id="title" className="section-heading font-sans">
             Get the highlights.
           </h1>
-          <div className="flex flex-wrap items-end gap-5 font-sans">
+          <div className=" mb-3 flex flex-wrap items-end gap-5 font-sans">
             <p className="link">
               Watch the film
               <img src={watchImg} alt="watch" className="ml-2" />
@@ -29,6 +30,8 @@ const Highlights = () => {
             </p>
           </div>
         </div>
+
+        <VideoCarousel />
       </div>
     </section>
   );
