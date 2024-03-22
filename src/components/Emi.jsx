@@ -3,15 +3,15 @@ import gsap from "gsap";
 
 const Emi = () => {
   useGSAP(() => {
-    gsap.to("#Emi", {
+    gsap.to("#emi", {
       opacity: 1,
-      delay: 5,
+      delay: 2,
     });
   }, []);
 
   return (
     <div
-      id="Emi"
+      id="emi"
       className="h-12 bg-gray-950 text-white px-4 flex items-center justify-center text-center text-lg md:text-base cursor-pointer">
       <p className="font-sans">
         Save ₹6000.00 instantly on iPhone 15 Pro with HDFC Bank Credit Cards.

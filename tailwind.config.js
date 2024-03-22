@@ -15,14 +15,7 @@ export default {
       },
     },
     fontFamily: {
-      sans: [
-        "SF Pro Display",
-        "SF Pro Icons",
-        "Helvetica Neue",
-        "Helvetica",
-        "Arial",
-        "sans-serif",
-      ],
+      sans: ["SF Pro Display", "SF Pro Icons", "Arial", "sans-serif"],
     },
   },
   plugins: [],
