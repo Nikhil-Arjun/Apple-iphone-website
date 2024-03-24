@@ -43,7 +43,7 @@ canvas {
   }
 
   .color-container {
-    @apply flex items-center justify-center px-4 py-4 rounded-full bg-gray-300 backdrop-blur;
+    @apply flex items-center justify-center px-6 py-4 rounded-full bg-gray-300 backdrop-blur;
   }
 
   .size-btn-container {
@@ -51,7 +51,7 @@ canvas {
   }
 
   .size-btn {
-    @apply w-10 h-10 text-sm flex justify-center items-center bg-white text-black rounded-full transition-all;
+    @apply w-3/6 h-3/6 flex justify-center items-center bg-white px-3 py-3 text-black text-sm rounded-full transition-all;
   }
 
   .common-padding {

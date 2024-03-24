@@ -96,7 +96,7 @@ const Model = () => {
                 {sizes.map(({ label, value }) => (
                   <span
                     key={label}
-                    className="size-btn"
+                    className="size-btn font-bold font-serif"
                     style={{
                       backgroundColor: size === value ? "white" : "transparent",
                       color: size === value ? "black" : "white",
