@@ -6,6 +6,7 @@ import "./index.css";
 import Emi from "./components/Emi";
 
 import * as Sentry from "@sentry/react";
+import Features from "./components/Features";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <Hero />
       <Highlights />
       <Model />
+      <Features />
     </main>
   );
 };
