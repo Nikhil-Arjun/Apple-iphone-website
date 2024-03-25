@@ -36,8 +36,11 @@ const Model = () => {
   return (
     <section className="common-padding">
       <div className="screen-max-width">
-        <h1 id="heading" className="section-heading">
-          Take a closer look.
+        <h1
+          id="heading"
+          className="section-heading"
+          whileHover={{ color: "#ffb914" }}>
+          Take a closer look. (Try 360° degree view)
         </h1>
 
         <div className="flex flex-col items-center mt-5">
