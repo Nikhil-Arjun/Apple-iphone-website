@@ -5,6 +5,8 @@ import Model from "./components/Model";
 import "./index.css";
 import Emi from "./components/Emi";
 
+import * as Sentry from "@sentry/react";
+
 const App = () => {
   return (
     <main className="bg-black">
@@ -17,4 +19,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Sentry.withProfiler(App);

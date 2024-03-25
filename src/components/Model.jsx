@@ -1,19 +1,20 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import ModelView from "./ModelView";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { yellowImg } from "../utils";
 
 import * as THREE from "three";
 import { Canvas } from "@react-three/fiber";
 import { View } from "@react-three/drei";
 import { models, sizes } from "../constants";
+import { animateWithGsapTimeline } from "../utils/animations";
 
 const Model = () => {
   const [size, setSize] = useState("small");
   const [model, setModel] = useState({
     title: "iPhone 15 Pro in Natural Titanium",
-    color: ["#8F8A81", "#FFE7B9", "#6f6c64"],
+    color: ["#8F8A81", "#FFE7B9", "#6F6C64"],
     img: yellowImg,
   });
 
@@ -28,6 +29,24 @@ const Model = () => {
   // rotation
   const [smallRotation, setSmallRotation] = useState(0);
   const [largeRotation, setLargeRotation] = useState(0);
+
+  const tl = gsap.timeline();
+
+  useEffect(() => {
+    if (size === "large") {
+      animateWithGsapTimeline(tl, small, smallRotation, "#view1", "#view2", {
+        transform: "translateX(-100%)",
+        duration: 2,
+      });
+    }
+
+    if (size === "small") {
+      animateWithGsapTimeline(tl, large, largeRotation, "#view2", "#view1", {
+        transform: "translateX(0)",
+        duration: 2,
+      });
+    }
+  }, [size]);
 
   useGSAP(() => {
     gsap.to("#heading", { y: 0, opacity: 1 });
@@ -69,10 +88,10 @@ const Model = () => {
               className="w-full h-full"
               style={{
                 position: "fixed",
-                top: "0",
-                bottom: "0",
-                left: "0",
-                right: "0",
+                top: 0,
+                bottom: 0,
+                left: 0,
+                right: 0,
                 overflow: "hidden",
               }}
               eventSource={document.getElementById("root")}>
@@ -95,11 +114,11 @@ const Model = () => {
                 ))}
               </ul>
 
-              <button className="size-btn-container">
+              <button className="size-btn-container font-sans font-semibold text-lg">
                 {sizes.map(({ label, value }) => (
                   <span
                     key={label}
-                    className="size-btn font-bold font-serif"
+                    className="size-btn"
                     style={{
                       backgroundColor: size === value ? "white" : "transparent",
                       color: size === value ? "black" : "white",
