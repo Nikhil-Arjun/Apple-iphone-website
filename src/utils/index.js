@@ -28,6 +28,8 @@ import explore1 from "/assets/images/explore1.jpg";
 import explore2 from "/assets/images/explore2.jpg";
 import chip from "/assets/images/chip.jpeg";
 import frame from "/assets/images/frame.png";
+import hiw2 from "/assets/images/hiw2.jpg";
+import Mobile from "/assets/images/Mobile.jpg";
 
 export const heroVideo = hmv;
 export const smallHeroVideo = smallmv;
@@ -55,3 +57,5 @@ export const explore1Img = explore1;
 export const explore2Img = explore2;
 export const chipImg = chip;
 export const frameImg = frame;
+export const howItworks2 = hiw2;
+export const mobileImg = Mobile;
