@@ -36,8 +36,7 @@ const HowItWorks2 = () => {
             <p className="hiw-text">
               With iPhone 15 Pro, you <br />
               have multiple focal lengths <br />
-              to work with. It’s like <having>" "</having>
-              <br />
+              to work with. It’s like having <br />
               <span className="text-white">
                 seven pro lenses in your pocket,
               </span>

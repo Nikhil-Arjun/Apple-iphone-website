@@ -10,6 +10,7 @@ import Features from "./components/Features";
 import HowItWorks from "./components/HowItWorks";
 import Footer from "./components/Footer";
 import HowItWorks2 from "./components/HowItWorks2";
+import Mobilecam from "./components/Mobilecam";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
       <Features />
       <HowItWorks />
       <HowItWorks2 />
+      <Mobilecam />
       <Footer />
     </main>
   );
