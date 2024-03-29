@@ -18,13 +18,6 @@ const zoom = () => {
       duration: 2,
       ease: "power2.inOut",
     });
-
-    animateWithGsap(".g_fadeIn", {
-      opacity: 1,
-      y: 0,
-      duration: 1,
-      ease: "power2.inOut",
-    });
   }, []);
 
   return (
@@ -59,6 +52,40 @@ const zoom = () => {
                 <source src={zoomVideo} type="video/mp4" />
               </video>
             </div>
+          </div>
+        </div>
+
+        <div className="hiw-text-container">
+          <div
+            className="flex flex-1 justify-center items-center
+flex-col gap-5 py-10">
+            <p className="hiw-text">
+              For iPhone 15 Pro Max, we <br />
+              designed a 5x Telephoto camera <br />
+              with{" "}
+              <span className="text-white">
+                the longest optical zoom of <br /> any iPhone ever
+              </span>
+              to fit in our <br />
+              compact Pro camera system.
+            </p>
+
+            <p className="hiw-text">
+              Now you can{" "}
+              <span className="text-white">
+                {" "}
+                take sharper <br />
+                close‑ups from farther away
+              </span>
+              — like <br /> a phenomenal photo of your friend <br />
+              or a goal in your kid’s <br />
+              soccer match.
+            </p>
+          </div>
+
+          <div className="flex-1 flex justify-center items-center flex-col">
+            <p className="hiw-bigtext">5x optical zoom</p>
+            <p className="hiw-text">with the 120 mm lens</p>
           </div>
         </div>
       </div>
