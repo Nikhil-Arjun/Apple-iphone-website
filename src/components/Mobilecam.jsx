@@ -38,6 +38,13 @@ const Mobilecam = () => {
             </div>
           </div>
         </div>
+
+        <div className="bg-neutral-800 my-20 h-[1px] w-full" />
+
+        <h4 className="text-3xl md:text-4xl font-semibold text-center">
+          Shoot magical spatial videos, <br /> then relive them on Apple Vision
+          Pro
+        </h4>
       </div>
     </section>
   );

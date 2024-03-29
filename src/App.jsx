@@ -11,6 +11,7 @@ import HowItWorks from "./components/HowItWorks";
 import Footer from "./components/Footer";
 import HowItWorks2 from "./components/HowItWorks2";
 import Mobilecam from "./components/Mobilecam";
+import Zoom from "./components/Zoom";
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
       <HowItWorks />
       <HowItWorks2 />
       <Mobilecam />
+      <Zoom />
       <Footer />
     </main>
   );
